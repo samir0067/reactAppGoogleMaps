@@ -22,6 +22,8 @@ import {
 } from '@reach/combobox'
 import '@reach/combobox/styles.css'
 
+require('dotenv').config()
+
 const libraries = ["places"]
 const mapContainerStyle = {
   width: '100vw',
@@ -34,13 +36,14 @@ const center = {
 const options = {
   styles: mapStyles,
 }
+const API_KEY = process.env.REACT_APP_GOOGLE_API_KEY;
 
 export default function App() {
   const { isLoaded, loadError } = useLoadScript({
-    googleMapsApiKey: "REACT_APP_GOOGLE_API_KEY",
+    googleMapsApiKey: API_KEY,
     libraries,
   })
-
+console.log(useLoadScript)
   if (loadError) return 'Error loading Maps'
   if (!isLoaded) return 'Loading Maps'
 
