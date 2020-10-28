@@ -1,13 +1,64 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.mapBlock {
+    width: 70vw;
+    height: 70vh;
+    margin-top: 80px;
+    margin-left: 16%;
+    border: solid 3px rebeccapurple;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+h1 {
+    position: absolute;
+    top: 5.9rem;
+    left: 15.2rem;
+    color: #281414;
+    z-index: 10;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.search {
+    position: absolute;
+    top: 5.9rem;
+    left: 55%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 400px;
+    z-index: 10;
+}
+
+.search input {
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+.locate {
+    position: absolute;
+    top: 5.9rem;
+    right: 13.1rem;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    z-index: 10;
+}
+
+.locate img {
+    width: 30px;
+    cursor: pointer;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
